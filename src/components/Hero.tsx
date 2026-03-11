@@ -8,13 +8,13 @@ export default function Hero() {
   return (
     <section className="relative w-full h-screen flex items-center justify-center overflow-hidden bg-[#0a0a0a]">
       {/* Spline Background */}
-      <div className="absolute inset-0 z-0 opacity-80">
+      <div className="absolute inset-0 z-0 opacity-80 overflow-hidden">
         <iframe 
           src='https://my.spline.design/distortingtypography-gGCQCGUOgtxhTUayKRVvAKQT/' 
           frameBorder='0' 
           width='100%' 
           height='100%'
-          className="w-full h-full"
+          className="w-full h-full scale-125 origin-center"
         ></iframe>
       </div>
 
@@ -24,7 +24,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-white whitespace-pre-line leading-tight drop-shadow-2xl"
+          className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-white break-keep leading-tight drop-shadow-2xl"
         >
           {t('hero.title')}
         </motion.h1>
