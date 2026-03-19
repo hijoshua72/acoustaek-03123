@@ -6,48 +6,17 @@ export default function Hero() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative w-full h-screen flex items-center justify-center overflow-hidden bg-[#0a0a0a]">
+    <section className="relative w-full h-screen overflow-hidden bg-onyx">
       {/* Spline Background */}
-      <div className="absolute inset-0 z-0 opacity-80 overflow-hidden">
+      <div className="absolute inset-0 z-0 overflow-hidden flex items-center justify-center">
         <iframe 
-          src='https://my.spline.design/distortingtypography-gGCQCGUOgtxhTUayKRVvAKQT/' 
+          src='https://my.spline.design/distortingtypographycopy-f3Mi7sXadmv6aNDMaoIWSkea/' 
           frameBorder='0' 
-          width='100%' 
-          height='100%'
-          className="w-full h-full scale-125 origin-center"
+          className="w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-full lg:scale-[1.5] origin-center"
         ></iframe>
       </div>
-
-      {/* Content */}
-      <div className="relative z-10 text-center px-6 pointer-events-none">
-        <motion.h1 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-white break-keep leading-tight drop-shadow-2xl"
-        >
-          {t('hero.title')}
-        </motion.h1>
-        <motion.p 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="mt-6 text-lg md:text-xl text-zinc-300 font-mono drop-shadow-md"
-        >
-          {t('hero.subtitle')}
-        </motion.p>
-      </div>
-      
-      {/* Scroll indicator */}
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-zinc-400 font-mono text-xs pointer-events-none"
-      >
-        <span>SCROLL</span>
-        <div className="w-[1px] h-12 bg-gradient-to-b from-zinc-400 to-transparent"></div>
-      </motion.div>
+      {/* Overlay to hide Spline logo */}
+      <div className="absolute bottom-0 left-0 w-full h-16 bg-onyx z-10 pointer-events-none" />
     </section>
   );
 }
