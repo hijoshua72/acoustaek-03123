@@ -8,7 +8,7 @@ const projects = [
     title: '불일치랑 기만이',
     artist: '한솔',
     role: 'Mixing & Mastering',
-    image: 'public/albums/Hansol-Disagreement_and_deception.jpg',
+    image: '/albums/Hansol-Disagreement_and_deception.jpg',
     link: 'https://youtube.com',
   },
   {
@@ -16,7 +16,7 @@ const projects = [
     title: '노래를 부르네',
     artist: '온송',
     role: 'Mixing & Mastering',
-    image: 'public/albums/onsong-Singing.jpg',
+    image: '/albums/onsong-Singing.jpg',
     link: 'https://youtube.com',
   },
   {
@@ -24,7 +24,7 @@ const projects = [
     title: '가짜여름 (feat. Zenda)',
     artist: '박공원',
     role: 'Recording, Mixing & Mastering',
-    image: 'public/albums/Zenda-Fake_Summer.jpg',
+    image: '/albums/Zenda-Fake_Summer.jpg',
     link: 'https://youtube.com',
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     title: 'Lily',
     artist: '박공원, Zenda',
     role: 'Arrangement',
-    image: 'public/albums/Zenda-Lily.jpg',
+    image: '/albums/Zenda-Lily.jpg',
     link: 'https://youtube.com',
   },
 ];
